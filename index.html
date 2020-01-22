@@ -2,21 +2,46 @@
 <html lang="en">
     <head>
        <meta charset="UTF-8"->
-       <title>Aquila Appleberry></title>
-    
+       <title>Hello, I am Aquila Appleberry></title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AquilaAppleberry Hello page">
+    <meta name="keywords" content="Aquila Appleberry, Apple, resume, welcome, hello, contact">
+    <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
     </head>
     <body>
-        <nav>
-            <ul>
+        <main>?</main>
+        <h1>Hello, I am Aquila Appleberry</h1>
+        <img src="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64" alt="Aquila Appleberry">
+        <img style="border-radius: 50%; float: right; margin-right: 1em;" src="..." alt="...">
+        <p>Welcome to my website. I am eager to share my experience with you.</p>
+        <header>
+            <span class="logo">My WebSite</span>
+            <a id="toggleMenu">Menu</a>
+            <nav>
+              <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+              </ul>
+            </nav>
+          </header>
         <h3>Aquila Appleberry</h3>
-        <h6>Aquila Appleberry</h6>
-        <img src="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64" alt="My Avatar">
-    
+        <script>
+
+            var toggleMenu = document.getElementById('toggleMenu');
+            var nav = document.querySelector('nav');
+            toggleMenu.addEventListener(
+              'click',
+              function(){
+                if(nav.style.display=='block'){
+                  nav.style.display='none';
+                }else{
+                  nav.style.display='block';
+                }
+              }
+            );
+          </script>
+
     </body>
 </html>
